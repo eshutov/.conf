@@ -10,6 +10,7 @@ Plug 'davidhalter/jedi-vim', { 'for':  'python' }
 Plug 'chun-yang/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ntpeters/vim-better-whitespace'
 "Plug 'easymotion/vim-easymotion'
 " good content search
 "Plug 'rking/ag.vim'
