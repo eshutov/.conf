@@ -49,7 +49,8 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " basic settings
 syntax on
-set number
+set number relativenumber
+set nu rnu
 set expandtab
 set tabstop=2
 set hlsearch
