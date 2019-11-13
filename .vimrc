@@ -1,4 +1,9 @@
-" Specify a directory for plugins
+" ############################
+" #                          #
+" #    Pluggins settings     #
+" #                          #
+" ############################
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -6,7 +11,7 @@ Plug 'eshutov/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'lyokha/vim-xkbswitch'
-Plug 'davidhalter/jedi-vim', { 'for':  'python' }
+"Plug 'davidhalter/jedi-vim', { 'for':  'python' }
 Plug 'chun-yang/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -17,6 +22,13 @@ Plug 'ntpeters/vim-better-whitespace'
 
 " Initialize plugin system
 call plug#end()
+
+
+" ############################
+" #                          #
+" # Pluggin related settings #
+" #                          #
+" ############################
 
 " nerdtree
 map <leader>n :NERDTreeToggle<CR>
@@ -39,7 +51,6 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#tab_nr_type = 1
 
-
 " kxbswitch
 let g:XkbSwitchEnabled = 1
 
@@ -47,7 +58,22 @@ let g:XkbSwitchEnabled = 1
 let g:ctrlp_map = '<leader>p'
 let g:ctrlp_cmd = 'CtrlP'
 
-" basic settings
+
+" ############################
+" #                          #
+" #   File formate settings  #
+" #                          #
+" ############################
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:>
+
+
+" ############################
+" #                          #
+" #     Basic settings       #
+" #                          #
+" ############################
+
 syntax on
 set number relativenumber
 set nu rnu
@@ -75,3 +101,4 @@ nnoremap <leader>8 8gt
 nnoremap <leader>9 9gt
 nnoremap <leader>w gt
 nnoremap <leader>W gT
+
