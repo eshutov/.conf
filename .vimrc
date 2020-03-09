@@ -50,6 +50,11 @@ let g:airline_section_error = ''
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#tab_nr_type = 1
+" Next 2 are terrible workaround for the issue:
+" Error detected while processing function airline#extensions#xkblayout#status:
+" it removes layout displaying
+let g:airline#extensions#keymap#enabled = 0
+let g:airline#extensions#xkblayout#enabled = 0
 
 " kxbswitch
 let g:XkbSwitchEnabled = 1
